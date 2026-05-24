@@ -2,8 +2,12 @@
 
 import requests
 import json 
+import os 
+from dotenv import load_dotenv
 
-TOKEN = "MjU4MjA5OTY3OTg1Nzg2ODgx.Gv3rD_.KIvMW4vHhLLNWiJR6zkY1LCxwyoktG5jDjKDF4"
+load_dotenv()
+
+TOKEN = os.getenv("DISCORD_TOKEN")
 
 headers = {
     "Authorization": TOKEN 
